@@ -1,0 +1,18 @@
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Banco de dados e arquivos de execução
+*.db
+log_agendamentos.txt
+
+# Entrega acadêmica e arquivos pessoais
+*.zip
+Relatorio_RAD_Pet_Shop_Preenchido.pdf
+
+# Arquivos de configuração locais
+.env
+.env.*
+.vscode/
