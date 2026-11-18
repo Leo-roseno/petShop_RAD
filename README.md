@@ -61,3 +61,64 @@ de forma prática.
 
 ![Tela principal do sistema](imagens/tela_principal.png)
 
+## Testes e Validação
+
+O projeto passou por testes funcionais para
+verificar o comportamento das principais operações
+do sistema.
+
+### Funcionalidades verificadas
+
+- Cadastro de agendamentos
+- Consulta dos registros cadastrados
+- Atualização de agendamentos
+- Exclusão de registros
+- Integração com a API ViaCEP
+- Preenchimento automático de endereço
+- Tratamento de CEP inválido
+- Registro de operações em logs
+
+### Testes do banco de dados
+
+O sistema utiliza SQLite para armazenar os
+agendamentos.
+
+O arquivo `teste_banco.py` contém testes
+relacionados às operações com o banco de dados.
+
+### Testes de auditoria
+
+O arquivo `teste_auditoria.py` é utilizado
+para verificar o registro de operações
+realizadas pelo sistema.
+
+
+## Integração com a API ViaCEP
+
+O sistema possui integração com a API pública
+ViaCEP para consultar informações de endereço
+a partir do CEP informado pelo usuário.
+
+### Funcionamento
+
+1. O usuário informa o CEP.
+2. O sistema consulta a API ViaCEP.
+3. Os dados do endereço são recebidos.
+4. Os campos correspondentes são preenchidos
+   automaticamente na interface.
+
+### Tratamento de erros
+
+A aplicação também possui verificações para
+situações como:
+
+- CEP inválido
+- CEP não encontrado
+- Falha na consulta à API
+
+Essa integração permite reduzir o preenchimento
+manual e melhorar a experiência do usuário.
+
+API utilizada:
+https://viacep.com.br/
+
