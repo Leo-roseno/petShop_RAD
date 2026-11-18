@@ -52,3 +52,12 @@ e testes de software.
 Léo Roseno
 
 Projeto desenvolvido para fins acadêmicos e de portfólio.
+
+## Interface do Sistema
+
+A aplicação possui interface gráfica desenvolvida
+com Tkinter, permitindo gerenciar os agendamentos
+de forma prática.
+
+![Tela principal do sistema](imagens/tela_principal.png)
+
